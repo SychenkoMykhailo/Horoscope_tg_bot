@@ -1,7 +1,8 @@
-import horoscopeAPI from "./API/horoscopeAPI";
-import zodiacs from "./zodiacs/zodiacs";
-import defineZodiac from "./functions/defineZodiac";
-import checkValid from "./functions/checkValid";
+import horoscopeAPI from "./API/horoscopeAPI.js";
+import zodiacs from "./zodiacs/zodiacs.js";
+import defineZodiac from "./functions/defineZodiac.js";
+import checkValid from "./functions/checkValid.js";
+
 import TelegramAPI from "node-telegram-bot-api";
 
 const token = "1835520992:AAEZ_nN7bOjggs4ZhIfoS2hC_-QJI3wHAlE";
