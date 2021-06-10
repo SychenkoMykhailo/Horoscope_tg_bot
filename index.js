@@ -5,8 +5,10 @@ import checkValid from "./functions/checkValid.js";
 
 import TelegramAPI from "node-telegram-bot-api";
 
+let port = process.env.PORT || 8443;
+let host = process.env.HOST;
 const token = "1835520992:AAEZ_nN7bOjggs4ZhIfoS2hC_-QJI3wHAlE";
-const bot = new TelegramAPI(token, { polling: true });
+const bot = new TelegramAPI(token, { polling: true, port: port, host: host });
 const start = () => {
   bot.setMyCommands([{ command: "/start", description: "Greeting and info" }]);
   bot.on("message", async (msg) => {
